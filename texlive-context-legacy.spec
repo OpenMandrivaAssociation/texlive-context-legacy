@@ -1,5 +1,6 @@
 %global tl_name context-legacy
 %global tl_revision 79616
+%global tl_bin_links texexec:%{_texmfdistdir}/scripts/context/stubs/unix/texexec texmfstart:%{_texmfdistdir}/scripts/context/stubs/unix/texmfstart
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
@@ -23,6 +24,8 @@ Requires:	texlive(mptopdf)
 Requires:	texlive(pdftex)
 Requires:	texlive(stmaryrd)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 In TeX Live, ConTeXt MkII is split from current ConTeXt (MkIV and
