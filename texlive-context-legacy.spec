@@ -1,5 +1,5 @@
 %global tl_name context-legacy
-%global tl_revision 79616
+%global tl_revision 79834
 %global tl_bin_links texexec:%{_texmfdistdir}/scripts/context/stubs/unix/texexec texmfstart:%{_texmfdistdir}/scripts/context/stubs/unix/texmfstart
 
 Name:		texlive-%{tl_name}
